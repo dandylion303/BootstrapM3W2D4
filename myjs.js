@@ -64,10 +64,16 @@ function navbarBg() {
         navbar.setAttribute("style", "background-color:transparent")
     }
 }
-
 window.onscroll = navbarBg
 
 
+/////////EXTRA-EXTRA-EXTRA = HAMBURGER BACKGROUND ON CLICK//////
+const hamburger = document.querySelector("#hamburger")
+function whiteHamburger(){
+    navbar.setAttribute("style", "background-color:white!important")
+}
+
+hamburger.addEventListener("click",whiteHamburger)
 
 
 
