@@ -13,8 +13,8 @@
 <body>
     <!--NAVBAR-->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid flex-column flex-md-row align-items-center">
                 <div>
                     <a class="navbar-brand" href="#">
                         <img src="./media/LOGO_ESTESO.png" alt="Logo" class="logo px-3">
@@ -25,13 +25,13 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#weeklyDeal">Offerta della Settimana</a>
                         <a class="nav-link" href="#welcomeSummer">Welcome Summer</a>
                         <a class="nav-link d-md-block d-none" href="#dailyDeal">Offerta del Giorno</a>
-                        <a class="nav-link" href="lastMinute">Last Minute</a>
+                        <a class="nav-link" href="#lastMinute">Last Minute</a>
                     </div>
                 </div>
             </div>
@@ -46,9 +46,8 @@
                 <div class="JumboText col col-md-6 col-lg-4 d-flex flex-column text-center my-5">
                     <h1>Stray Cats Travels</h1>
                     <h2 class="lead">Il mondo è pieno di <span>A-mici</span> che ti aspettano</h2>
-                    <hr class="my-2 w-100">
                     <p class="lead text-center">
-                        <button class="btn btn-danger btn-lg px-3">
+                        <button class="btn btnContacts btn-danger btn-lg px-3" data-bs-toggle="modal" data-bs-target="#contactsModal">
                             Contattaci
                         </button>
                     </p>
@@ -64,12 +63,13 @@
             <div class="row text-center">
                 <div class="col mb-5">
                     <h3 class="pt-5">OFFERTE DELLA SETTIMANA</h3>
-                    <button type="button" class="btn btnCustom">
+                    <p class="counter"></p>
+                    <button type="button" class="btn btnToggleWD">
                         <img src="./media/divider.png" alt="scopri le offerte" class="dividerCustom">
                     </button>
                 </div>
             </div>
-            <div class="row h-100">
+            <div class="row h-100 sectionWD">
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <div class="destination card h-100 position-relative border-0 shadow-sm">
                         <img src="./media/CAT_CLOSEUP.webp" class="card-img-top" alt="">
@@ -162,12 +162,12 @@
             <div class="row text-center">
                 <div class="col mb-5">
                     <h3 class="pt-5">WELCOME SUMMER</h3>
-                    <button type="button" class="btn btnCustom pb-3">
+                    <button type="button" class="btn btnToggleWS pb-3">
                         <img src="./media/divider.png" alt="scopri le offerte" class="dividerCustom">
                     </button>
                 </div>
             </div>
-            <div class="row h-100">
+            <div class="row h-100 sectionWS">
                 <div class="col-6 col-md-4 col-lg-2 mb-4">
                     <div class="destinationCardSmall card h-100 border-0 shadow-lg">
                         <img src="./media/ROME-cats.png" class="card-img" alt="cat">
@@ -245,13 +245,13 @@
                 <div class="row text-center">
                     <div class="col mb-5 px-4">
                         <h3 class="pt-5">OGGI PROPONIAMO</h3>
-                        <button type="button" class="btn btnCustom pb-3">
+                        <button type="button" class="btn btnToggleDD pb-3">
                             <img src="./media/divider.png" alt="scopri le offerte" class="dividerCustom">
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container sectionDD">
                 <div class="row">
                     <div class="col-12 col-lg-8 pb-3">
                         <img src="./media/CAT-home.jpg" alt="cat" class="img-fluid rounded-start">
@@ -286,6 +286,7 @@
 
             </div>
         </section>
+
 
         <!--ASIDE-->
         <section id="endPage" class="container py-5">
@@ -402,15 +403,16 @@
     <footer class="text-white">
         <div class="container-fluid bg-secondary text-center text-md-start">
             <div class="row justify-content-around align-items-center">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-2">
                     <img src="./media/LOGOSCT.png" alt="logo" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-8 text-center">
                     <p>La prima agenzia per gattari incalliti Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Magnam ipsum ea laboriosam beatae sit quaerat adipisci a. Error nostrum totam laborum
                         consectetur! Tenetur veritatis iste laborum nobis qui sapiente temporibus!</p>
+                        <button class="btn btn-warning px-4 btnDelete">Cancella Tutti i Viaggi</button>
                 </div>
-                <div class="col-12 col-sm-3 text-end">
+                <div class="col-12 col-sm-2 text-end">
                     <p class="text-uppercase text-warning fw-bold pt-2">Prepare your pawsaport</p>
                     <p class>via Vai 4</p>
                     <p>Nyancity</p>
@@ -423,12 +425,39 @@
     </footer>
 
 
+
+<!--MODALE-->
+
+<div class="modal fade" id="contactsModal" tabindex="-1" aria-labelledby="contactsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="contactsModalLabel">Ricevi le nostre offerte graffianti</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lasciaci la tua mail per ricevere le migliori offerte per destinazioni piene di gatti</p>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Indirizzo Email</label>
+                        <input type="email" class="form-control" id="userEmail" placeholder="miao@mail.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">Invia</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SCRIPT-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script src="./myjs.js"></script>
 </body>
 
 </html>
