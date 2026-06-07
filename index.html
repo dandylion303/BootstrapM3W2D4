@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stray Cats Travels</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="./media/LOGO_ESTESO.png" alt="Logo" class="logo px-3">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#weeklyDeal">Offerta della Settimana</a>
+                        <a class="nav-link" href="#welcomeSummer">Welcome Summer</a>
+                        <a class="nav-link d-md-block d-none" href="#dailyDeal">Offerta del Giorno</a>
+                        <a class="nav-link" href="lastMinute">Last Minute</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--HERO SECTION-->
+    <section class="hero jumbotron jumbotron-fluid">
+        <div class="container h-100">
+            <div class="customJumbo row h-100 align-items-xl-center gy-5">
+                <div class="col-12 col-md-6 col-lg-8 d-none d-md-block"></div>
+                <div class="JumboText col col-md-6 col-lg-4 d-flex flex-column text-center my-5">
+                    <h1>Stray Cats Travels</h1>
+                    <h2 class="lead">Il mondo è pieno di <span>A-mici</span> che ti aspettano</h2>
+                    <hr class="my-2 w-100">
+                    <p class="lead text-center">
+                        <button class="btn btn-danger btn-lg px-3">
+                            Contattaci
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main>
+        <!--WEEKLY DEAL-->
+        <section class="container my-5" id="weeklyDeal">
+            <div class="row text-center">
+                <div class="col mb-5">
+                    <h3 class="pt-5">OFFERTE DELLA SETTIMANA</h3>
+                    <button type="button" class="btn btnCustom">
+                        <img src="./media/divider.png" alt="scopri le offerte" class="dividerCustom">
+                    </button>
+                </div>
+            </div>
+            <div class="row h-100">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="destination card h-100 position-relative border-0 shadow-sm">
+                        <img src="./media/CAT_CLOSEUP.webp" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Aoshima</h4>
+                            <div class="row d-flex justify-content-between">
+                                <p class="card-text col-12 col-lg-6"><ion-icon
+                                        name="location-outline"></ion-icon>Giappone</p>
+                                <p class="card-text text-lg-end col-12 col-lg-6"><ion-icon
+                                        name="heart-outline"></ion-icon></ion-icon>80 Gatti</p>
+                            </div>
+                            <a href="#" class="btn btn-primary col-12 mt-auto">Let's Go!</a>
+                        </div>
+
+                        <span class="badgeDeal position-absolute translate-middle badge rounded-pill bg-warning">
+                            -30%
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="destination card h-100 position-relative border-0 shadow-sm">
+                        <img src="./media/CAT2.webp" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Kotor</h4>
+                            <div class="row d-flex justify-content-between">
+                                <p class="card-text col-12 col-lg-6"><ion-icon
+                                        name="location-outline"></ion-icon>Montenegro</p>
+                                <p class="card-text text-lg-end col-12 col-lg-6"><ion-icon
+                                        name="heart-outline"></ion-icon></ion-icon>+500 Gatti</p>
+                            </div>
+                            <a href="#" class="btn btn-primary col-12 mt-auto">Let's Go!</a>
+                        </div>
+
+                        <span class=" badgeDeal position-absolute translate-middle badge rounded-pill bg-warning">
+                            -20%
+                        </span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="destination card h-100 position-relative border-0 shadow-sm">
+                        <img src="./media/CAT3.webp" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Fes (Medina)</h4>
+                            <div class="row d-flex justify-content-between">
+                                <p class="card-text col-12 col-lg-6"><ion-icon
+                                        name="location-outline"></ion-icon>Marocco</p>
+                                <p class="card-text text-lg-end col-12 col-lg-6"><ion-icon
+                                        name="heart-outline"></ion-icon></ion-icon>30 Gatti</p>
+                            </div>
+                            <a href="#" class="btn btn-primary col-12 mt-auto">Let's Go!</a>
+                        </div>
+
+                        <span class=" badgeDeal position-absolute translate-middle badge rounded-pill bg-warning">
+                            -10%
+                        </span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="destination card h-100 position-relative border-0 shadow-sm">
+                        <img src="./media/CAT8.jpg" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Istanbul</h4>
+                            <div class="row d-flex justify-content-between">
+                                <p class="card-text col-12 col-lg-6"><ion-icon
+                                        name="location-outline"></ion-icon>Turchia</p>
+                                <p class="card-text text-lg-end col-12 col-lg-6"><ion-icon
+                                        name="heart-outline"></ion-icon></ion-icon>600 Gatti</p>
+                            </div>
+                            <a href="#" class="btn btn-primary col-12 mt-auto">Let's Go!</a>
+                        </div>
+
+                        <span class=" badgeDeal position-absolute translate-middle badge rounded-pill bg-warning">
+                            -25%
+                        </span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+        <!--WELCOME SUMMER-->
+        <section class="container pb-5" id="welcomeSummer">
+            <div class="row text-center">
+                <div class="col mb-5">
+                    <h3 class="pt-5">WELCOME SUMMER</h3>
+                    <button type="button" class="btn btnCustom pb-3">
+                        <img src="./media/divider.png" alt="scopri le offerte" class="dividerCustom">
+                    </button>
+                </div>
+            </div>
+            <div class="row h-100">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="destinationCardSmall card h-100 border-0 shadow-lg">
+                        <img src="./media/ROME-cats.png" class="card-img" alt="cat">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Roma</h4>
+                            <p class="card-text">Italia</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="destinationCardSmall card h-100 border-0 shadow-lg">
+                        <img src="./media/Houtong-cat.webp" class="card-img" alt="cat">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Houtong</h4>
+                            <p class="card-text">Taiwan</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="destinationCardSmall card h-100 border-0 shadow-lg">
+                        <img src="./media/Kiching.jpg" class="card-img" alt="cat">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Kuching</h4>
+                            <p class="card-text">Malesia</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="destinationCardSmall card h-100 border-0 shadow-lg">
+                        <img src="./media/zelenogradsk.webp" class="card-img" alt="cat">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Zelenogradsk</h4>
+                            <p class="card-text">Russia</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="destinationCardSmall card h-100 border-0 shadow-lg">
+                        <img src="./media/santorini.jpg" class="card-img" alt="cat">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Creta</h4>
+                            <p class="card-text">Grecia</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="destinationCardSmall card h-100 border-0 shadow-lg">
+                        <img src="./media/paris.png" class="card-img" alt="cat">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Paris</h4>
+                            <p class="card-text">France</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--OFFERTA DEL GIORNO-->
+        <section id="dailyDeal" class="d-none d-md-block ">
+            <div class=container>
+                <div class="row text-center">
+                    <div class="col mb-5 px-4">
+                        <h3 class="pt-5">OGGI PROPONIAMO</h3>
+                        <button type="button" class="btn btnCustom pb-3">
+                            <img src="./media/divider.png" alt="scopri le offerte" class="dividerCustom">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 pb-3">
+                        <img src="./media/CAT-home.jpg" alt="cat" class="img-fluid rounded-start">
+
+                    </div>
+                    <div class="col col-lg-4 d-flex flex-column justify-content-evenly text-center text-sm-start">
+                        <div>
+                            <p class="h6 text-uppercase text-danger fw-bold">DESTINAZIONE SPECIALE</p>
+                            <p class="h5">La Vacanza Perfetta</p>
+                            <p class="text-uppercase text-danger fw-bold"><span>€50</span><br>a persona volo incluso</p>
+                        </div>
+                        <p>10 giorni nell'habitat naturale del gatto domestico: casa mia!
+                            <br>Potrai osservarlo da estremamente vicino quando ti farà diventare il suo personalissimo
+                            cuscino.
+                        </p>
+                        <p>
+                            Affrettati:
+                            <br>Solo i primi 5 fortunati viaggiatori potranno vincere l'ebrezza di cambiare la lettiera
+                            da soli!
+                        </p>
+                        <div class="row">
+                            <div class="d-flex justify-content-between">
+                                <p><ion-icon name="calendar-outline"></ion-icon> Dal 5 al 10 Giugno 2026</p>
+                                <p><ion-icon name="location-outline"></ion-icon> Bologna</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-warning my-5">
+                            Prenota Ora
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--ASIDE-->
+        <section id="endPage" class="container py-5">
+            <div class="row">
+
+                <div id="lastMinute" class="col-12 col-md-6 mb-5 mb-md-0 h-100">
+                    <div class="column-header mb-4">
+                        <small class="text-uppercase text-danger fw-bold">Last Minute</small>
+                        <h3 class="fw-bold">Ultime disponibilità</h3>
+                    </div>
+
+                    <div class="card destinationLM mb-3 border-0 shadow-sm">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 col-sm-3 col-md-4">
+                                <img src="./media/placeholder.png" class="img-fluid rounded-start" alt="placeholder">
+                            </div>
+                            <div class="col-8 col-sm-9 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-1 fw-bold">Aoshima</h4>
+                                    <p class="card-text text-muted small mb-2">7 notti + Volo</p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0 fw-bold text-danger">€ 560</p>
+                                        <span class="badge rounded-pill text-bg-warning small">-30% • 3 posti</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card destinationLM mb-3 border-0 shadow-sm">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 col-sm-3 col-md-4">
+                                <img src="./media/placeholder2.png" class="img-fluid rounded-start" alt="placeholder">
+                            </div>
+                            <div class="col-8 col-sm-9 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-1 fw-bold">Kotor</h4>
+                                    <p class="card-text text-muted small mb-2">4 notti + Volo</p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0 fw-bold text-danger">€ 120</p>
+                                        <span class="badge rounded-pill text-bg-warning small">-30% • 3 posti</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card destinationLM mb-3 border-0 shadow-sm">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 col-sm-3 col-md-4">
+                                <img src="./media/placeholder.png" class="img-fluid rounded-start" alt="placeholder">
+                            </div>
+                            <div class="col-8 col-sm-9 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-1 fw-bold">Creta</h4>
+                                    <p class="card-text text-muted small mb-2">7 notti + Volo</p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0 fw-bold text-danger">€ 560</p>
+                                        <span class="badge rounded-pill text-bg-warning small">-30% • 3 posti</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="reviews" class="col-12 col-md-6 reviews-column h-100">
+                    <div class="column-header mb-4">
+                        <small class="text-uppercase text-danger fw-bold">Testimonial</small>
+                        <h3 class="fw-bold">A-mici passati</h3>
+                    </div>
+                    <div class="h-100 d-flex flex-column justify-content-between">
+                        <div class="card review-card mb-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text italic">Esempio di recensione...</p>
+                            </div>
+                        </div>
+                        <div class="card review-card mb-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text italic">Esempio di recensione...</p>
+                            </div>
+                        </div>
+                        <div class="card review-card mb-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nisi ad sapiente laborum architecto accusamus omnis vitae expedita officia
+                                    perspiciatis ab numquam distinctio ducimus maiores, neque tempora atque illo quod.
+                                    Minima.</p>
+                            </div>
+                        </div>
+                        <div class="card review-card mb-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text italic">Esempio di recensione...Lorem</p>
+                            </div>
+                        </div>
+                        <div class="card review-card mb-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                    quo asperiores, explicabo dolorum minima nesciunt officia saepe dolorem veniam vero
+                                    est mollitia fuga, fugiat quis nisi eum corrupti soluta accusantium!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white">
+        <div class="container-fluid bg-secondary text-center text-md-start">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-12 col-sm-3">
+                    <img src="./media/LOGOSCT.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <p>La prima agenzia per gattari incalliti Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam ipsum ea laboriosam beatae sit quaerat adipisci a. Error nostrum totam laborum
+                        consectetur! Tenetur veritatis iste laborum nobis qui sapiente temporibus!</p>
+                </div>
+                <div class="col-12 col-sm-3 text-end">
+                    <p class="text-uppercase text-warning fw-bold pt-2">Prepare your pawsaport</p>
+                    <p class>via Vai 4</p>
+                    <p>Nyancity</p>
+                    <a href="#" class="btn btn-light">Contattaci</a>
+                </div>
+
+            </div>
+            <p class="text-center mb-0">Copyright @DandyLion303</p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

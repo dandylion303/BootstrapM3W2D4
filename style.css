@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+body {
+    background-color: antiquewhite;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+
+
+.jumbotron {
+    background-image: url(./media/HERO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    border-bottom-left-radius: 50px;
+    padding-top: 100px;
+    height: 80vh;
+}
+
+.JumboText {
+    background-image: url(./media/BLOB.png);
+    background-position-x: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+    .JumboText {
+        background-image: none;
+        padding-bottom: 0;
+    }
+}
+
+.JumboText span {
+    color: rgb(188, 95, 66);
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 4rem !important;
+}
+
+h2 {
+    font-family: "SN Pro", sans-serif;
+    font-size: 2rem !important;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "SN Pro", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.badgeDeal {
+    position: absolute;
+    top: 20px !important;
+    left: 90% !important;
+}
+
+.dividerCustom {
+    height: 25px;
+}
+
+.btnCustom {
+    border: 1px solid rgb(188, 95, 66);
+    border-radius: 25px;
+}
+
+.destinationCardSmall {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 15px !important;
+}
+
+
+.destinationCardSmall .card-img {
+    opacity: 1;
+}
+
+.destinationCardSmall .card-img-overlay {
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+.destinationCardSmall:hover .card-img-overlay {
+    background-color: rgba(234, 64, 64, 0.5);
+}
+
+#dailyDeal {
+    font-family: "SN Pro", sans-serif;
+    background-color: white;
+}
+
+.h6 {
+    font-family: "SN Pro", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+#dailyDeal .h5 {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2.5rem;
+}
+
+#dailyDeal span {
+    font-family: "SN Pro", sans-serif;
+    font-size: 2rem;
+}
+
+
+
+footer img {
+    width: 120px;
+}
